@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-10-21",
+  "status": "verified public-source baseline; incomplete coverage",
+  "freshness": "Baseline Oct 21; check daily snapshot",
+  "changes": [],
+  "warnings": [
+    "This baseline is dated Oct 21, 2026; not a live feed.",
+    "No validated election-control model, per-race poll aggregation, or candidate roster.",
+    "Virginia early-vote counts from third-party tracker, not independently verified against official state totals.",
+    "2022/2024 matched-date early-vote comparisons unavailable."
+  ],
+  "observations": {
+    "senate_market_dem_pct": {
+      "value": 66,
+      "source": "https://kalshi.com/category/elections/midterms",
+      "retrieved_at": "2026-10-21",
+      "note": "Kalshi page snapshot; market quote, not model probability"
+    },
+    "house_market_dem_pct": {
+      "value": 91,
+      "source": "https://kalshi.com/category/elections/midterms",
+      "retrieved_at": "2026-10-21",
+      "note": "Kalshi page snapshot; market quote"
+    },
+    "senate_tossup_count": {
+      "value": 7,
+      "source": "https://www.cookpolitical.com/ratings/senate-race-ratings",
+      "retrieved_at": "2026-10-21",
+      "note": "Cook rating summary dated Oct 20"
+    },
+    "house_tossup_count": {
+      "value": 21,
+      "source": "https://www.cookpolitical.com/ratings/house-race-ratings",
+      "retrieved_at": "2026-10-21",
+      "note": "Cook House rating summary dated Oct 16"
+    },
+    "va_early_in_person": {
+      "value": 586350,
+      "source": "https://election-watch.50501vets.com/map/VA?cat=inperson",
+      "retrieved_at": "2026-10-21",
+      "note": "Third-party tracker; Oct 21 reported in-person early ballots"
+    },
+    "va_mail_returned": {
+      "value": 237974,
+      "source": "https://election-watch.50501vets.com/map/VA?cat=returned&layer=results",
+      "retrieved_at": "2026-10-21",
+      "note": "Third-party tracker; Oct 21 returned mail ballots"
+    }
+  },
+  "sources": {
+    "kalshi": {
+      "url": "https://kalshi.com/category/elections/midterms",
+      "retrieved_at": "2026-10-21",
+      "available": true
+    },
+    "cook_senate": {
+      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings",
+      "retrieved_at": "2026-10-21",
+      "available": true
+    },
+    "cook_house": {
+      "url": "https://www.cookpolitical.com/ratings/house-race-ratings",
+      "retrieved_at": "2026-10-21",
+      "available": true
+    },
+    "va_tracker": {
+      "url": "https://election-watch.50501vets.com/map/VA?cat=inperson",
+      "retrieved_at": "2026-10-21",
+      "available": true
+    },
+    "sc_official": {
+      "url": "https://scvotes.gov/elections-statistics/voter-participation/",
+      "retrieved_at": "2026-10-21",
+      "available": true
+    }
+  }
+}
