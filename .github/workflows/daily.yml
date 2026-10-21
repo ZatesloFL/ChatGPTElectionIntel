@@ -1,0 +1,23 @@
+name: Daily sourced snapshot
+on:
+  schedule:
+    - cron: '20 12 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect public-source status
+        run: python3 scripts/daily_snapshot.py
+      - name: Commit source snapshot and history
+        run: |
+          git config user.name "election-intel-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json data/history.jsonl
+          if ! git diff --cached --quiet; then
+            git commit -m "Daily source snapshot"
+            git push
+          fi
