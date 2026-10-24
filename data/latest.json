@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-23T17:15:48.452310+00:00",
+  "as_of": "2026-10-24T16:03:30.048864+00:00",
   "status": "partial: sources checked, forecast not computed",
   "freshness": "See source retrieval timestamps",
   "changes": [],
@@ -12,25 +12,25 @@
   "sources": {
     "cook_senate": {
       "url": "https://www.cookpolitical.com/ratings/senate-race-ratings",
-      "retrieved_at": "2026-10-23T17:15:48.452310+00:00",
+      "retrieved_at": "2026-10-24T16:03:30.048864+00:00",
       "available": false,
       "error": "HTTPError: HTTP Error 403: Forbidden"
     },
     "kalshi_midterms": {
       "url": "https://kalshi.com/category/elections/midterms",
-      "retrieved_at": "2026-10-23T17:15:48.452310+00:00",
+      "retrieved_at": "2026-10-24T16:03:30.048864+00:00",
       "available": false,
       "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     "sc_early_vote": {
       "url": "https://scvotes.gov/elections-statistics/voter-participation/",
-      "retrieved_at": "2026-10-23T17:15:48.452310+00:00",
+      "retrieved_at": "2026-10-24T16:03:30.048864+00:00",
       "available": true,
       "error": null
     },
     "va_early_vote": {
       "url": "https://www.elections.virginia.gov/casting-a-ballot/early-absentee/",
-      "retrieved_at": "2026-10-23T17:15:48.452310+00:00",
+      "retrieved_at": "2026-10-24T16:03:30.048864+00:00",
       "available": true,
       "error": null
     }
